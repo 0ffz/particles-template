@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.0"
+    application
 }
 
 repositories {
@@ -19,4 +20,8 @@ kotlin {
 // set src as source root
 kotlin.sourceSets.main {
     kotlin.srcDir("src")
+}
+
+application {
+    mainClass = "MainKt"
 }
